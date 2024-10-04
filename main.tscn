@@ -1,0 +1,29 @@
+[gd_scene load_steps=3 format=3 uid="uid://blqqkom7fhhys"]
+
+[ext_resource type="PackedScene" uid="uid://dv0o6c05vmso" path="res://player.tscn" id="1_r80b3"]
+[ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://wall_prefab.tscn" id="2_eq203"]
+
+[node name="Main" type="Node2D"]
+
+[node name="Player" parent="." instance=ExtResource("1_r80b3")]
+position = Vector2(590, 308)
+
+[node name="WallObjects" type="Node2D" parent="."]
+
+[node name="WallPrefab" parent="WallObjects" instance=ExtResource("2_eq203")]
+position = Vector2(576, 643)
+scale = Vector2(8, 1)
+
+[node name="WallPrefab2" parent="WallObjects" instance=ExtResource("2_eq203")]
+position = Vector2(576, 5)
+scale = Vector2(8, 1)
+
+[node name="WallPrefab3" parent="WallObjects" instance=ExtResource("2_eq203")]
+position = Vector2(5, 324)
+rotation = 1.5708
+scale = Vector2(4.5, 1)
+
+[node name="WallPrefab4" parent="WallObjects" instance=ExtResource("2_eq203")]
+position = Vector2(1147, 324)
+rotation = 1.5708
+scale = Vector2(4.5, 1)
