@@ -24,3 +24,5 @@ shape = SubResource("RectangleShape2D_yx7fe")
 [node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(0, -50)
 texture = SubResource("PlaceholderTexture2D_sf1d1")
+
+[node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
