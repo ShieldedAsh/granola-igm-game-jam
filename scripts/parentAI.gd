@@ -14,9 +14,6 @@ func _ready():
 	pp.position = Vector2(425,497)
 
 func _physics_process(delta: float) -> void:
-	# Add the gravity.
-	if not is_on_floor():
-		velocity += get_gravity() * delta
 	var space_state = get_world_2d().direct_space_state
 	# use global coordinates, not local to node
 	for i in range(3,23,2):
