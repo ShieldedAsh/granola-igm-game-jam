@@ -16,6 +16,8 @@ func loadScene(scene:PackedScene):
 		newScene.play.connect(_on_main_menu_play)
 	elif newScene.scene_file_path == "res://scenes/intro.tscn":
 		newScene.loadNext.connect(_on_intro_load_next)
+	elif newScene.scene_file_path == "res://scenes/victory_screen.tscn":
+		newScene.backToTitle.connect()
 
 func _on_main_menu_play():
 	loadScene(preload("res://scenes/intro.tscn"))
@@ -25,3 +27,6 @@ func _on_pause_menu_load_main_menu():
 	
 func _on_intro_load_next():
 	loadScene(preload("res://scenes/main.tscn"))
+	
+func _on_victory_quit():
+	loadScene(preload("res://scripts/main_menu.tscn"))

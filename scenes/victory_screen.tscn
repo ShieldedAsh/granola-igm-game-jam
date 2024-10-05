@@ -1,0 +1,39 @@
+[gd_scene load_steps=3 format=3 uid="uid://banja7nnp2u40"]
+
+[ext_resource type="Texture2D" uid="uid://km07dj31nhsp" path="res://Sprites/electronics_full_sheet.png" id="1_t3nge"]
+[ext_resource type="Script" path="res://scenes/victory_screen.gd" id="1_wjwe6"]
+
+[node name="Victory screen" type="Node2D" groups=["Level"]]
+script = ExtResource("1_wjwe6")
+
+[node name="ElectronicsFullSheet" type="Sprite2D" parent="."]
+position = Vector2(503, 293)
+scale = Vector2(5, 5)
+texture = ExtResource("1_t3nge")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 289.0
+offset_top = 68.0
+offset_right = 828.0
+offset_bottom = 568.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
+offset_left = 161.0
+offset_top = 338.0
+offset_right = 321.0
+offset_bottom = 381.0
+text = "Victory Achieved
+"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 472.0
+offset_top = 473.0
+offset_right = 572.0
+offset_bottom = 536.0
+text = "Quit to Title
+"
+
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
