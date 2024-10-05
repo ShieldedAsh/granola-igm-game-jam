@@ -1,28 +1,17 @@
 extends CharacterBody2D
+#PhysicsDirectSpaceState2d::intersect_point()
 
-var movement_speed: float = 200.0
-var movement_target_position: Vector2 = Vector2(60.0,180.0)
+var speed = 300
+var accel = 7
+var pp = PhysicsPointQueryParameters2D.new()
+var patrolDirec = "Forwards"
 
-@onready var navigation_agent: NavigationAgent2D = $NavigationAgent2D
+
+@onready var nav: NavigationAgent2D = $NavigationAgent2D
 
 func _ready():
-	# These values need to be adjusted for the actor's speed
-	# and the navigation layout.
-	navigation_agent.path_desired_distance = 4.0
-	navigation_agent.target_desired_distance = 4.0
-
-	# Make sure to not await during _ready.
-	actor_setup.call_deferred()
-
-func actor_setup():
-	# Wait for the first physics frame so the NavigationServer can sync.
-	await get_tree().physics_frame
-
-	# Now that the navigation map is no longer empty, set the movement target.
-	set_movement_target(movement_target_position)
-
-func set_movement_target(movement_target: Vector2):
-	navigation_agent.target_position = movement_target
+	pp.collide_with_areas = true 
+	pp.position = Vector2(425,497)
 
 func _physics_process(delta: float) -> void:
 	# Add the gravity.
@@ -36,13 +25,22 @@ func _physics_process(delta: float) -> void:
 		var result = space_state.intersect_ray(query)
 		if result:
 			print("Hit at point: ", result.position)
-			
-	if navigation_agent.is_navigation_finished():
-		return
+	var direction = Vector3()
 
-	var current_agent_position: Vector2 = global_position
-	var next_path_position: Vector2 = navigation_agent.get_next_path_position()
+	if (patrolDirec == "Forwards" && get_world_2d().direct_space_state.intersect_point(pp,1)):
+		patrolDirec = "Backwards"
+		pp.position = Vector2(957,507)
+	elif (patrolDirec == "Backwards" && get_world_2d().direct_space_state.intersect_point(pp,1)):
+		patrolDirec = "Forwards"
+		pp.position = Vector2(425,497)
+	
 
-	velocity = current_agent_position.direction_to(next_path_position) * movement_speed
+	nav.target_position = pp.position
+	
+	direction = nav.get_next_path_position() - global_position
+	direction = direction.normalized()
+	
+	velocity = velocity.lerp(direction * speed, accel * delta)
+	
 	move_and_slide()
 	
