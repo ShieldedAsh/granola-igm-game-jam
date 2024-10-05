@@ -1,18 +1,12 @@
-[gd_scene load_steps=5 format=3 uid="uid://blqqkom7fhhys"]
+[gd_scene load_steps=3 format=3 uid="uid://blqqkom7fhhys"]
 
-[ext_resource type="Script" path="res://scenes/main.gd" id="1_p77ef"]
 [ext_resource type="PackedScene" uid="uid://dv0o6c05vmso" path="res://scenes/player.tscn" id="1_r80b3"]
 [ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://wall_prefab.tscn" id="2_eq203"]
-[ext_resource type="PackedScene" uid="uid://cotukxfx65rs6" path="res://parent.tscn" id="3_1bwbh"]
 
-[node name="Main" type="Node2D"]
-script = ExtResource("1_p77ef")
+[node name="Main" type="Node2D" groups=["Level"]]
 
 [node name="Player" parent="." instance=ExtResource("1_r80b3")]
 position = Vector2(590, 308)
-
-[node name="Parent" parent="." instance=ExtResource("3_1bwbh")]
-position = Vector2(843, 468)
 
 [node name="WallObjects" type="Node2D" parent="."]
 
@@ -33,5 +27,3 @@ scale = Vector2(4.5, 1)
 position = Vector2(1147, 324)
 rotation = 1.5708
 scale = Vector2(4.5, 1)
-
-[connection signal="contact" from="Parent" to="." method="_on_parent_contact"]
