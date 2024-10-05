@@ -3,7 +3,7 @@
 [ext_resource type="Script" path="res://scenes/main.gd" id="1_p77ef"]
 [ext_resource type="PackedScene" uid="uid://dv0o6c05vmso" path="res://scenes/player.tscn" id="1_r80b3"]
 [ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://wall_prefab.tscn" id="2_eq203"]
-[ext_resource type="PackedScene" path="res://parent.tscn" id="3_1bwbh"]
+[ext_resource type="PackedScene" uid="uid://xh3sludsd5b0" path="res://parent.tscn" id="3_1bwbh"]
 
 [node name="Main" type="Node2D"]
 script = ExtResource("1_p77ef")
@@ -13,6 +13,7 @@ position = Vector2(590, 308)
 
 [node name="Parent" parent="." instance=ExtResource("3_1bwbh")]
 position = Vector2(843, 468)
+rotation = 1.5708
 
 [node name="WallObjects" type="Node2D" parent="."]
 
