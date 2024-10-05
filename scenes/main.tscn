@@ -31,4 +31,7 @@ scale = Vector2(4.5, 1)
 
 [node name="ParentCharacter" parent="." instance=ExtResource("3_0iumb")]
 position = Vector2(892, 526)
-rotation = 1.5708
+rotation = -2.0944
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(799.6, 487)
