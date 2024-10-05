@@ -1,8 +1,15 @@
-[gd_scene load_steps=4 format=3 uid="uid://dt60l61luq0cq"]
+[gd_scene load_steps=5 format=3 uid="uid://dt60l61luq0cq"]
 
+<<<<<<< HEAD:world_scene.tscn
+[ext_resource type="Script" path="res://world_scene.gd" id="1_6r32m"]
+[ext_resource type="Script" path="res://pause_menu.gd" id="2_ntxla"]
+[ext_resource type="AudioStream" uid="uid://bmhh0bldqkpt2" path="res://sfx/MoveMenuItem/MoveMenuItem.wav" id="3_30fqy"]
+[ext_resource type="PackedScene" uid="uid://b64rk6xkg2nh3" path="res://main_menu.tscn" id="3_bk5y0"]
+=======
 [ext_resource type="Script" path="res://scripts/world_scene.gd" id="1_6r32m"]
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="2_ntxla"]
 [ext_resource type="PackedScene" uid="uid://b64rk6xkg2nh3" path="res://scripts/main_menu.tscn" id="3_bk5y0"]
+>>>>>>> main:scripts/world_scene.tscn
 
 [node name="WorldScene" type="Node2D"]
 script = ExtResource("1_6r32m")
@@ -11,6 +18,7 @@ script = ExtResource("1_6r32m")
 process_mode = 3
 
 [node name="PauseMenu" type="Control" parent="UI elements"]
+visible = false
 layout_mode = 3
 anchors_preset = 0
 offset_left = 369.0
@@ -41,10 +49,12 @@ offset_right = 225.0
 offset_bottom = 231.0
 text = "Quit"
 
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI elements/PauseMenu"]
+stream = ExtResource("3_30fqy")
+
 [node name="MainMenu" parent="." instance=ExtResource("3_bk5y0")]
 
 [connection signal="loadMainMenu" from="UI elements/PauseMenu" to="." method="_on_pause_menu_load_main_menu"]
 [connection signal="pressed" from="UI elements/PauseMenu/Resume" to="UI elements/PauseMenu" method="_on_button_pressed"]
 [connection signal="pressed" from="UI elements/PauseMenu/Quit" to="UI elements/PauseMenu" method="_on_button_2_pressed"]
 [connection signal="play" from="MainMenu" to="." method="_on_main_menu_play"]
-[connection signal="quit" from="MainMenu" to="." method="_on_main_menu_quit"]

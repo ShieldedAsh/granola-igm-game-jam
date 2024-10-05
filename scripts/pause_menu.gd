@@ -2,6 +2,8 @@ extends Control
 
 signal loadMainMenu
 
+@onready var sound = $AudioStreamPlayer
+
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	visible = false
@@ -20,10 +22,12 @@ func _process(delta):
 
 
 func _on_button_pressed(): #resume
+	sound.play()
 	get_tree().paused = false
 	visible = false
 
 func _on_button_2_pressed(): #quit
+	sound.play()
 	loadMainMenu.emit()
 	visible = false
 	get_tree().paused = false
