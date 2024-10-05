@@ -2,7 +2,11 @@
 
 importer="mp3"
 type="AudioStreamMP3"
+<<<<<<< Updated upstream
 uid="uid://cl2vyni74dcxo"
+=======
+uid="uid://bja57jfdst4ei"
+>>>>>>> Stashed changes
 path="res://.godot/imported/261109__jaklocke__door-opening-and-closing-8.mp3-bae3eeb109cbcdcb93d6f10572cbc8d6.mp3str"
 
 [deps]
