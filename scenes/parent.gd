@@ -1,7 +1,12 @@
 extends CharacterBody2D
 
+@onready var raycastFolder = $Raycasts
+
 var movement_speed: float = 200.0
 var movement_target_position: Vector2 = Vector2(60.0,180.0)
+
+var playerInRectangle:bool = false
+@export var playerNode: CharacterBody2D
 
 @onready var navigation_agent: NavigationAgent2D = $NavigationAgent2D
 
@@ -13,6 +18,7 @@ func _ready():
 
 	# Make sure to not await during _ready.
 	actor_setup.call_deferred()
+	
 
 func actor_setup():
 	# Wait for the first physics frame so the NavigationServer can sync.
@@ -24,16 +30,14 @@ func actor_setup():
 func set_movement_target(movement_target: Vector2):
 	navigation_agent.target_position = movement_target
 
-func _physics_process(delta: float) -> void:
+func _process(_delta):
 	var space_state = get_world_2d().direct_space_state
-	# use global coordinates, not local to node
-	for i in range(3,23,2):
-		var angle = (7.5 * i * PI) - rotation
-		var query = PhysicsRayQueryParameters2D.create(global_position, Vector2(100 * cos(angle)+position.x, -100 * sin(angle)+position.y))
-		var result = space_state.intersect_ray(query)
-		if result:
-			print("Hit at point: ", result.position)
+	print("process")
+	for i:RayCast2D in raycastFolder.get_children():
+		if i.is_colliding() and i.get_collider() is CharacterBody2D:
+			print("raycast hit a characterbody")
 			
+	
 	if navigation_agent.is_navigation_finished():
 		return
 
@@ -42,4 +46,3 @@ func _physics_process(delta: float) -> void:
 
 	velocity = current_agent_position.direction_to(next_path_position) * movement_speed
 	move_and_slide()
-	

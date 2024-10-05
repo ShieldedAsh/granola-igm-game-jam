@@ -12,6 +12,7 @@ offset_right = 886.0
 offset_bottom = 387.0
 
 [node name="TextEdit" type="RichTextLabel" parent="Panel"]
+layout_mode = 0
 offset_left = 35.0
 offset_top = 19.0
 offset_right = 567.0

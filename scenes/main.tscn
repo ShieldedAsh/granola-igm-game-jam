@@ -35,8 +35,9 @@ position = Vector2(1147, 324)
 rotation = 1.5708
 scale = Vector2(4.5, 1)
 
-[node name="ParentCharacter" parent="." instance=ExtResource("3_0iumb")]
+[node name="ParentCharacter" parent="." node_paths=PackedStringArray("playerNode") instance=ExtResource("3_0iumb")]
 position = Vector2(892, 526)
+playerNode = NodePath("../Player")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 position = Vector2(799.6, 487)

@@ -1,6 +1,6 @@
 [gd_scene load_steps=5 format=3 uid="uid://cotukxfx65rs6"]
 
-[ext_resource type="Script" path="res://scripts/parentAI.gd" id="1_flhrc"]
+[ext_resource type="Script" path="res://scenes/parent.gd" id="1_hm5qy"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vaeok"]
 size = Vector2(50, 50)
@@ -12,7 +12,7 @@ size = Vector2(1, 100)
 
 [node name="ParentCharacter" type="CharacterBody2D"]
 motion_mode = 1
-script = ExtResource("1_flhrc")
+script = ExtResource("1_hm5qy")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(1, 0, 0, 1)
@@ -26,3 +26,17 @@ position = Vector2(0, -50)
 texture = SubResource("PlaceholderTexture2D_sf1d1")
 
 [node name="NavigationAgent2D" type="NavigationAgent2D" parent="."]
+
+[node name="Raycasts" type="Node2D" parent="."]
+
+[node name="RayCast2D" type="RayCast2D" parent="Raycasts"]
+rotation = 3.14159
+target_position = Vector2(0, 1000)
+
+[node name="RayCast2D2" type="RayCast2D" parent="Raycasts"]
+rotation = 2.79253
+target_position = Vector2(0, 1000)
+
+[node name="RayCast2D3" type="RayCast2D" parent="Raycasts"]
+rotation = -2.79253
+target_position = Vector2(0, 1000)
