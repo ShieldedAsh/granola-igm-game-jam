@@ -2,16 +2,16 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://km07dj31nhsp"
-path="res://.godot/imported/electronics_full_sheet.png-334518b3d222c7d17ca8c6fbdab32d15.ctex"
+uid="uid://5ry61vggu1qw"
+path="res://.godot/imported/frontView.png-ef62b6214846b6c4e916c1fb5dabfc72.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/electronics_full_sheet.png"
-dest_files=["res://.godot/imported/electronics_full_sheet.png-334518b3d222c7d17ca8c6fbdab32d15.ctex"]
+source_file="res://sprites/frontView.png"
+dest_files=["res://.godot/imported/frontView.png-ef62b6214846b6c4e916c1fb5dabfc72.ctex"]
 
 [params]
 
