@@ -1,0 +1,35 @@
+[gd_scene load_steps=2 format=3 uid="uid://c1qsjqjlm5iri"]
+
+[ext_resource type="Script" path="res://scenes/intro.gd" id="1_2usvm"]
+
+[node name="Intro" type="Node2D" groups=["Level"]]
+script = ExtResource("1_2usvm")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 296.0
+offset_top = 140.0
+offset_right = 886.0
+offset_bottom = 387.0
+
+[node name="TextEdit" type="RichTextLabel" parent="Panel"]
+offset_left = 35.0
+offset_top = 19.0
+offset_right = 567.0
+offset_bottom = 284.0
+text = "Whew, what a long day; I can't wait to get home and play video games. 
+
+I just hope my mom dosen't make me do chores, I hate chores. 
+
+I'd better make sure she dosen't remember to tell me to do them. 
+
+I can't let her see me in the same place as the chores I need to do."
+fit_content = true
+
+[node name="Continue" type="Button" parent="."]
+offset_left = 538.0
+offset_top = 451.0
+offset_right = 617.0
+offset_bottom = 482.0
+text = "Continue"
+
+[connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
