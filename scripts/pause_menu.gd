@@ -21,12 +21,12 @@ func _process(delta):
 				get_tree().paused = true
 
 
-func _on_button_pressed(): #resume
+func _on_resume_pressed():
 	sound.play()
 	get_tree().paused = false
 	visible = false
 
-func _on_button_2_pressed(): #quit
+func _on_button_pressed():
 	sound.play()
 	loadMainMenu.emit()
 	visible = false

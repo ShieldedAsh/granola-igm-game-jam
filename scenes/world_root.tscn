@@ -1,0 +1,50 @@
+[gd_scene load_steps=4 format=3 uid="uid://dxvx8s56rslmw"]
+
+[ext_resource type="Script" path="res://scripts/world_scene.gd" id="1_7r32u"]
+[ext_resource type="Script" path="res://scripts/pause_menu.gd" id="3_u3a70"]
+[ext_resource type="AudioStream" uid="uid://bmhh0bldqkpt2" path="res://sfx/MoveMenuItem/MoveMenuItem.wav" id="4_oets1"]
+
+[node name="WorldRoot" type="Node2D"]
+script = ExtResource("1_7r32u")
+
+[node name="UI Elements" type="CanvasLayer" parent="."]
+
+[node name="Pause Menu" type="Control" parent="UI Elements"]
+process_mode = 3
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("3_u3a70")
+
+[node name="Panel" type="Panel" parent="UI Elements/Pause Menu"]
+layout_mode = 0
+offset_left = 383.0
+offset_top = 152.0
+offset_right = 731.0
+offset_bottom = 529.0
+
+[node name="Resume" type="Button" parent="UI Elements/Pause Menu"]
+layout_mode = 0
+offset_left = 513.0
+offset_top = 209.0
+offset_right = 583.0
+offset_bottom = 240.0
+text = "Resume"
+
+[node name="Button" type="Button" parent="UI Elements/Pause Menu"]
+layout_mode = 0
+offset_left = 543.0
+offset_top = 365.0
+offset_right = 585.0
+offset_bottom = 396.0
+text = "Quit
+"
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="UI Elements/Pause Menu"]
+stream = ExtResource("4_oets1")
+
+[connection signal="loadMainMenu" from="UI Elements/Pause Menu" to="." method="_on_pause_menu_load_main_menu"]
+[connection signal="pressed" from="UI Elements/Pause Menu/Resume" to="UI Elements/Pause Menu" method="_on_resume_pressed"]
+[connection signal="pressed" from="UI Elements/Pause Menu/Button" to="UI Elements/Pause Menu" method="_on_button_pressed"]

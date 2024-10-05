@@ -1,5 +1,7 @@
 extends Node2D
 
+func _ready():
+	loadScene(preload("res://scripts/main_menu.tscn"))
 
 func loadScene(scene:PackedScene):
 	for i in get_children():
@@ -10,7 +12,7 @@ func loadScene(scene:PackedScene):
 	var newScene = scene.instantiate()
 	add_child(newScene)
 	
-	if newScene.scene_file_path == "res://main_menu.tscn":
+	if newScene.scene_file_path =="res://scripts/main_menu.tscn":
 		newScene.play.connect(_on_main_menu_play)
 	
 

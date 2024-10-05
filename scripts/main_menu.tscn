@@ -1,11 +1,7 @@
 [gd_scene load_steps=3 format=3 uid="uid://b64rk6xkg2nh3"]
 
-<<<<<<< HEAD:main_menu.tscn
-[ext_resource type="Script" path="res://MainMenu.gd" id="1_34m1h"]
-[ext_resource type="AudioStream" uid="uid://bmhh0bldqkpt2" path="res://sfx/MoveMenuItem/MoveMenuItem.wav" id="2_ipiwp"]
-=======
-[ext_resource type="Script" path="res://scripts/node_2d.gd" id="1_34m1h"]
->>>>>>> main:scripts/main_menu.tscn
+[ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_34m1h"]
+[ext_resource type="AudioStream" uid="uid://bmhh0bldqkpt2" path="res://sfx/MoveMenuItem/MoveMenuItem.wav" id="2_lfyvn"]
 
 [node name="MainMenu" type="Node2D" groups=["Level"]]
 script = ExtResource("1_34m1h")
@@ -27,7 +23,7 @@ offset_bottom = 369.0
 text = "Quit"
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
-stream = ExtResource("2_ipiwp")
+stream = ExtResource("2_lfyvn")
 
 [connection signal="pressed" from="Play" to="." method="_on_play_pressed"]
 [connection signal="pressed" from="Button" to="." method="_on_button_pressed"]
