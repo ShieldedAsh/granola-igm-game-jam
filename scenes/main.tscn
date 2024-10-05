@@ -1,14 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://blqqkom7fhhys"]
+[gd_scene load_steps=6 format=4 uid="uid://blqqkom7fhhys"]
 
 [ext_resource type="PackedScene" uid="uid://dv0o6c05vmso" path="res://scenes/player.tscn" id="1_r80b3"]
 [ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://scripts/wall_prefab.tscn" id="2_eq203"]
 [ext_resource type="PackedScene" uid="uid://cotukxfx65rs6" path="res://scenes/parent.tscn" id="3_0iumb"]
-[ext_resource type="TileSet" uid="uid://be6q47hcmhxsq" path="res://tilesets/houseTileSet.tres" id="4_nibbg"]
+[ext_resource type="TileSet" uid="uid://c41i11msowpbo" path="res://tilesets/houseTileSet.tres" id="4_o7j88"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_rd4pn"]
-vertices = PackedVector2Array(712.594, 338.977, 668.039, 446.648, 538.25, 459.797, 552.023, 331.383, 679.648, 175.219, 547.867, 195.5, 605.633, 78.1328, 462.813, 116.906, 437.102, 4.64844, 240.43, -28.9375, -13.6719, 128.133, 9.5, -15.0078, -206.789, 35.0781, -115.477, -10.0938, -60.7109, 204.703, -254.703, 89.4375, 134.172, 349.633, 136.742, 455.547, 6.28125, 450, -69.8203, 292.352, -147.242, 448.07, -239.203, 291.922)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(4, 3, 5, 6), PackedInt32Array(6, 5, 7, 8), PackedInt32Array(9, 8, 7, 10, 11), PackedInt32Array(12, 13, 11, 10, 14, 15), PackedInt32Array(16, 17, 18, 19), PackedInt32Array(19, 18, 20, 21, 15), PackedInt32Array(14, 19, 15)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(144, 342, 147, 466, 6, 460, -153, 458, -249, 295, -265, 86, -213, 27, -118, -20, 9, -25, 241, -39, 440, -5, 612, 70, 689, 171, 723, 340, 675, 456, 527, 471, 542, 331, 538, 200, 459, 127, -8, 138, -51, 208, -59, 285)])
+vertices = PackedVector2Array(-2.90625, 253.148, -137.023, 369.641, -252.883, 298.688, -132.031, -44.6563, 72.5313, -35.1016, 150.656, 246.969, 243.859, 45.5703, 298.453, 272.617, 459.313, 87.8672, 497, 161.273, 646.258, 460.711, 522.547, 452.211, 414.258, 373.188, 563.742, 182.5, 657.898, 317.43, 689.602, 419.07)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3, 4), PackedInt32Array(5, 0, 4, 6), PackedInt32Array(7, 5, 6, 8, 9), PackedInt32Array(10, 11, 12, 7, 9, 13, 14, 15)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(519, 462, 408, 381, 294, 282, 150, 257, 1, 263, -136, 382, -265, 303, -139, -55, 75, -45, 247, 36, 466, 79, 504, 153, 570, 174, 667, 313, 701, 422, 650, 471)])
 
 [node name="Main" type="Node2D" groups=["Level"]]
 
@@ -36,19 +36,15 @@ rotation = 1.5708
 scale = Vector2(4.5, 1)
 
 [node name="ParentCharacter" parent="." instance=ExtResource("3_0iumb")]
-position = Vector2(957, 507)
+position = Vector2(892, 526)
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+position = Vector2(799.6, 487)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
-position = Vector2(350, 105)
+position = Vector2(357, 100)
 navigation_polygon = SubResource("NavigationPolygon_rd4pn")
 
-[node name="Node" type="Node" parent="."]
-
-[node name="Non-interactable" type="TileMapLayer" parent="Node"]
-scale = Vector2(1.5, 1.5)
-tile_set = ExtResource("4_nibbg")
-
-[node name="Interactable" type="TileMapLayer" parent="Node"]
-scale = Vector2(1.5, 1.5)
-tile_set = ExtResource("4_nibbg")
-rendering_quadrant_size = 32
+[node name="TileMapLayer" type="TileMapLayer" parent="."]
+tile_map_data = PackedByteArray("AAAcAAIAAAAAAAUAAAAcAAMAAAAAAAYAAAAcAAQAAAAAAAcAAAAdAAIAAAABAAUAAAAdAAMAAAABAAYAAAAdAAQAAAABAAcAAAA=")
+tile_set = ExtResource("4_o7j88")
