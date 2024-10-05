@@ -1,4 +1,4 @@
-[gd_scene load_steps=4 format=3 uid="uid://cotukxfx65rs6"]
+[gd_scene load_steps=5 format=3 uid="uid://cotukxfx65rs6"]
 
 [ext_resource type="Script" path="res://scripts/parentAI.gd" id="1_flhrc"]
 
@@ -6,6 +6,9 @@
 size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yx7fe"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sf1d1"]
+size = Vector2(1, 100)
 
 [node name="ParentCharacter" type="CharacterBody2D"]
 motion_mode = 1
@@ -17,3 +20,7 @@ texture = SubResource("PlaceholderTexture2D_vaeok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 shape = SubResource("RectangleShape2D_yx7fe")
+
+[node name="Sprite2D2" type="Sprite2D" parent="."]
+position = Vector2(0, -50)
+texture = SubResource("PlaceholderTexture2D_sf1d1")
