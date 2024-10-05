@@ -1,8 +1,9 @@
-[gd_scene load_steps=5 format=3 uid="uid://blqqkom7fhhys"]
+[gd_scene load_steps=6 format=3 uid="uid://blqqkom7fhhys"]
 
 [ext_resource type="PackedScene" uid="uid://dv0o6c05vmso" path="res://scenes/player.tscn" id="1_r80b3"]
 [ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://scripts/wall_prefab.tscn" id="2_eq203"]
 [ext_resource type="PackedScene" uid="uid://cotukxfx65rs6" path="res://scenes/parent.tscn" id="3_0iumb"]
+[ext_resource type="TileSet" uid="uid://be6q47hcmhxsq" path="res://tilesets/houseTileSet.tres" id="4_nibbg"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_rd4pn"]
 vertices = PackedVector2Array(712.594, 338.977, 668.039, 446.648, 538.25, 459.797, 552.023, 331.383, 679.648, 175.219, 547.867, 195.5, 605.633, 78.1328, 462.813, 116.906, 437.102, 4.64844, 240.43, -28.9375, -13.6719, 128.133, 9.5, -15.0078, -206.789, 35.0781, -115.477, -10.0938, -60.7109, 204.703, -254.703, 89.4375, 134.172, 349.633, 136.742, 455.547, 6.28125, 450, -69.8203, 292.352, -147.242, 448.07, -239.203, 291.922)
@@ -40,3 +41,14 @@ position = Vector2(957, 507)
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 position = Vector2(350, 105)
 navigation_polygon = SubResource("NavigationPolygon_rd4pn")
+
+[node name="Node" type="Node" parent="."]
+
+[node name="Non-interactable" type="TileMapLayer" parent="Node"]
+scale = Vector2(1.5, 1.5)
+tile_set = ExtResource("4_nibbg")
+
+[node name="Interactable" type="TileMapLayer" parent="Node"]
+scale = Vector2(1.5, 1.5)
+tile_set = ExtResource("4_nibbg")
+rendering_quadrant_size = 32
