@@ -18,4 +18,4 @@ func _on_main_menu_play():
 	loadScene(preload("res://scenes/main.tscn"))
 
 func _on_pause_menu_load_main_menu():
-	loadScene(preload("res://main_menu.tscn"))
+	loadScene(preload("res://scripts/main_menu.tscn"))
