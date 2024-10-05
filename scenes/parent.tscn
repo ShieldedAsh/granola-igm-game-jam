@@ -1,18 +1,14 @@
-[gd_scene load_steps=6 format=3 uid="uid://cotukxfx65rs6"]
+[gd_scene load_steps=5 format=3 uid="uid://cotukxfx65rs6"]
 
 [ext_resource type="Script" path="res://scenes/parent.gd" id="1_hm5qy"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vaeok"]
 size = Vector2(50, 50)
 
-[sub_resource type="CircleShape2D" id="CircleShape2D_rjxgy"]
-radius = 25.0
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_yx7fe"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sf1d1"]
 size = Vector2(1, 100)
-
-[sub_resource type="RectangleShape2D" id="RectangleShape2D_xtuqo"]
-size = Vector2(50, 50)
 
 [node name="ParentCharacter" type="CharacterBody2D"]
 motion_mode = 1
@@ -23,9 +19,9 @@ modulate = Color(1, 0, 0, 1)
 texture = SubResource("PlaceholderTexture2D_vaeok")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-shape = SubResource("CircleShape2D_rjxgy")
+shape = SubResource("RectangleShape2D_yx7fe")
 
-[node name="FacingDirection" type="Sprite2D" parent="."]
+[node name="Sprite2D2" type="Sprite2D" parent="."]
 position = Vector2(0, -50)
 texture = SubResource("PlaceholderTexture2D_sf1d1")
 
@@ -44,4 +40,3 @@ target_position = Vector2(0, 1000)
 [node name="RayCast2D3" type="RayCast2D" parent="Raycasts"]
 rotation = -2.79253
 target_position = Vector2(0, 1000)
-
