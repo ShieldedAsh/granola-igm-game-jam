@@ -11,9 +11,10 @@ config_version=5
 [application]
 
 config/name="IGM-2024-LockedInStudios"
-run/main_scene="res://world_scene.tscn"
+run/main_scene="res://scripts/world_scene.tscn"
 config/features=PackedStringArray("4.3", "Mobile")
 config/icon="res://icon.svg"
+<<<<<<<Updatedupstreamrun/main_scene="res://world_scene.tscn"
 
 [global_group]
 

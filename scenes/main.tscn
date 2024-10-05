@@ -1,7 +1,8 @@
-[gd_scene load_steps=3 format=3 uid="uid://blqqkom7fhhys"]
+[gd_scene load_steps=4 format=3 uid="uid://blqqkom7fhhys"]
 
 [ext_resource type="PackedScene" uid="uid://dv0o6c05vmso" path="res://scenes/player.tscn" id="1_r80b3"]
-[ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://wall_prefab.tscn" id="2_eq203"]
+[ext_resource type="PackedScene" uid="uid://boott4bwwi073" path="res://scripts/wall_prefab.tscn" id="2_eq203"]
+[ext_resource type="PackedScene" uid="uid://cotukxfx65rs6" path="res://scenes/parent.tscn" id="3_0iumb"]
 
 [node name="Main" type="Node2D" groups=["Level"]]
 
@@ -27,3 +28,7 @@ scale = Vector2(4.5, 1)
 position = Vector2(1147, 324)
 rotation = 1.5708
 scale = Vector2(4.5, 1)
+
+[node name="ParentCharacter" parent="." instance=ExtResource("3_0iumb")]
+position = Vector2(892, 526)
+rotation = 1.5708

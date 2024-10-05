@@ -21,4 +21,4 @@ func _on_main_menu_quit():
 	get_tree().quit()
 
 func _on_pause_menu_load_main_menu():
-	loadScene(preload("res://main_menu.tscn"))
+	loadScene(preload("res://scripts/main_menu.tscn"))

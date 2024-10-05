@@ -1,6 +1,6 @@
 [gd_scene load_steps=4 format=3 uid="uid://cotukxfx65rs6"]
 
-[ext_resource type="Script" path="res://parentAI.gd" id="1_flhrc"]
+[ext_resource type="Script" path="res://scripts/parentAI.gd" id="1_flhrc"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vaeok"]
 size = Vector2(50, 50)
