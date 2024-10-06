@@ -42,3 +42,11 @@ target_position = Vector2(0, 1000)
 [node name="RayCast2D3" type="RayCast2D" parent="Raycasts"]
 rotation = -2.79253
 target_position = Vector2(0, 1000)
+
+[node name="RayCast2D4" type="RayCast2D" parent="Raycasts"]
+rotation = 2.96706
+target_position = Vector2(0, 1000)
+
+[node name="RayCast2D5" type="RayCast2D" parent="Raycasts"]
+rotation = -2.96706
+target_position = Vector2(0, 1000)

@@ -35,5 +35,6 @@ func _physics_process(delta):
 	direction = direction.normalized()
 	
 	velocity = velocity.lerp(direction * speed, accel * delta)
+	rotation = velocity.angle() + (PI/2)
 	
 	move_and_slide()
