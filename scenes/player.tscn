@@ -1,10 +1,12 @@
 [gd_scene load_steps=4 format=3 uid="uid://dv0o6c05vmso"]
 
 [ext_resource type="Script" path="res://scripts/characterController.gd" id="1_7ughc"]
-[ext_resource type="Texture2D" uid="uid://5ry61vggu1qw" path="res://sprites/frontView.png" id="2_i08mx"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_5cgeq"]
+size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_qogfq"]
-size = Vector2(50, 112)
+size = Vector2(50, 50)
 
 [node name="Player" type="CharacterBody2D"]
 motion_mode = 1
@@ -12,10 +14,9 @@ script = ExtResource("1_7ughc")
 
 [node name="Sprite2D" type="Sprite2D" parent="."]
 modulate = Color(0, 1, 1, 1)
-scale = Vector2(3.6, 3.6)
-texture = ExtResource("2_i08mx")
+texture = SubResource("PlaceholderTexture2D_5cgeq")
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
-position = Vector2(0, -0.999999)
+position = Vector2(0, 1.19209e-06)
 shape = SubResource("RectangleShape2D_qogfq")
 one_way_collision_margin = 0.0

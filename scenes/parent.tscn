@@ -6,6 +6,7 @@
 size = Vector2(50, 50)
 
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_yx7fe"]
+size = Vector2(50, 50)
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_sf1d1"]
 size = Vector2(1, 100)
