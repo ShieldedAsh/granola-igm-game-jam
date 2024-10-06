@@ -4,12 +4,11 @@ extends CharacterBody2D
 
 signal playerDetected
 
-var speed = 300
+var speed = 200
 var accel = 7
 var physicsParameters = PhysicsPointQueryParameters2D.new()
-var patrolStops = [Vector2(114,101),Vector2(115,520),Vector2(1009,528),Vector2(1015,95),Vector2(572,95),Vector2(565,345)]
-var currentStop = 4
-var stopDirection = -1
+var patrolStops = [Vector2(1197,614),Vector2(1197,271),Vector2(950,252),Vector2(950,400),Vector2(939,393),Vector2(831,396),Vector2(831,447),Vector2(938,445),Vector2(938,236),Vector2(211,248),Vector2(211,997),Vector2(402,1002),Vector2(529,1119),Vector2(656,1006),Vector2(834,1011),Vector2(856,891),Vector2(1125,893),Vector2(1197,614),Vector2(1822,621),Vector2(1822,415),Vector2(1509,451),Vector2(1506,346),Vector2(1208,352)]
+var currentStop = 0
 
 @onready var nav: NavigationAgent2D = $NavigationAgent2D
 
@@ -18,6 +17,7 @@ func _process(_delta):
 	for i:RayCast2D in raycastFolder.get_children():
 		if i.is_colliding() and i.get_collider() is CharacterBody2D:
 			playerDetected.emit()
+			#print("playerdetected")
 			
 func _physics_process(delta):
 	physicsParameters.collide_with_areas = true 
@@ -26,10 +26,7 @@ func _physics_process(delta):
 	# Add the gravity
 	var direction = Vector2()
 	if get_world_2d().direct_space_state.intersect_point(physicsParameters, 1):
-		print("HIT")
-		if (currentStop == 0 || currentStop == 5):
-			stopDirection *= -1
-		currentStop += stopDirection
+		currentStop = (currentStop + 1) % patrolStops.size()
 
 	nav.target_position = patrolStops[currentStop]
 	

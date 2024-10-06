@@ -28,8 +28,7 @@ text = "Whew, what a long day; I can't wait to get home and play video games.
 I just hope my mom dosen't make me do chores, I hate chores. 
 
 I'd better make sure she dosen't remember to tell me to do them. 
-
-I can't let her see me in the same place as the chores I need to do."
+"
 fit_content = true
 
 [node name="Continue" type="Button" parent="."]
