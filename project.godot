@@ -54,11 +54,6 @@ down={
 ]
 }
 
-[layer_names]
-
-2d_physics/layer_1="Most Things"
-2d_physics/layer_2="Doors"
-
 [rendering]
 
 renderer/rendering_method="mobile"
