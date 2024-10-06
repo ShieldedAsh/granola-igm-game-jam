@@ -1,6 +1,7 @@
-[gd_scene load_steps=5 format=3 uid="uid://cotukxfx65rs6"]
+[gd_scene load_steps=6 format=3 uid="uid://cotukxfx65rs6"]
 
 [ext_resource type="Script" path="res://scenes/parent.gd" id="1_hm5qy"]
+[ext_resource type="Texture2D" uid="uid://uslxwd0j4tra" path="res://Sprites/New_Project.png" id="2_w20y5"]
 
 [sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_vaeok"]
 size = Vector2(50, 50)
@@ -50,3 +51,9 @@ target_position = Vector2(0, 1000)
 [node name="RayCast2D5" type="RayCast2D" parent="Raycasts"]
 rotation = -2.96706
 target_position = Vector2(0, 1000)
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(97, -578)
+rotation = -0.0523599
+scale = Vector2(2.3, 3)
+texture = ExtResource("2_w20y5")
