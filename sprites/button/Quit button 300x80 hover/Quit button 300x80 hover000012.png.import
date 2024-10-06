@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://cftw3qxjx5h2g"
-path="res://.godot/imported/Quit button 300x80 hover000012.png-3a114bbf5ce9b23c3db47491e4627f59.ctex"
+path="res://.godot/imported/Quit button 300x80 hover000012.png-37e036c77e41d0adf00f304f44bc2262.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/button/Quit button 300x80 hover/Quit button 300x80 hover000012.png"
-dest_files=["res://.godot/imported/Quit button 300x80 hover000012.png-3a114bbf5ce9b23c3db47491e4627f59.ctex"]
+source_file="res://sprites/button/Quit button 300x80 hover/Quit button 300x80 hover000012.png"
+dest_files=["res://.godot/imported/Quit button 300x80 hover000012.png-37e036c77e41d0adf00f304f44bc2262.ctex"]
 
 [params]
 

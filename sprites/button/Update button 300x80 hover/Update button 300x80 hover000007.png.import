@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dgs03ggbqxd1f"
-path="res://.godot/imported/Update button 300x80 hover000007.png-221a4aaab8120132a052e305410f61ad.ctex"
+path="res://.godot/imported/Update button 300x80 hover000007.png-b7b2e3d4431acd3355ae5a28c9d8b2c8.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/button/Update button 300x80 hover/Update button 300x80 hover000007.png"
-dest_files=["res://.godot/imported/Update button 300x80 hover000007.png-221a4aaab8120132a052e305410f61ad.ctex"]
+source_file="res://sprites/button/Update button 300x80 hover/Update button 300x80 hover000007.png"
+dest_files=["res://.godot/imported/Update button 300x80 hover000007.png-b7b2e3d4431acd3355ae5a28c9d8b2c8.ctex"]
 
 [params]
 

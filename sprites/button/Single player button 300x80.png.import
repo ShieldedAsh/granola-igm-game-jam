@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://2jicefi2ngu4"
-path="res://.godot/imported/Single player button 300x80.png-a5b3ffabf8ae92ba3bc25f139bed4bc4.ctex"
+path="res://.godot/imported/Single player button 300x80.png-145b89e791faf5ae156a1662ad2e562c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/button/Single player button 300x80.png"
-dest_files=["res://.godot/imported/Single player button 300x80.png-a5b3ffabf8ae92ba3bc25f139bed4bc4.ctex"]
+source_file="res://sprites/button/Single player button 300x80.png"
+dest_files=["res://.godot/imported/Single player button 300x80.png-145b89e791faf5ae156a1662ad2e562c.ctex"]
 
 [params]
 
