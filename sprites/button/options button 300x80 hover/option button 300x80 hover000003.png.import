@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bgk7vhofqc8ad"
-path="res://.godot/imported/option button 300x80 hover000003.png-d174dd52da8357385bd72456dec5637a.ctex"
+path="res://.godot/imported/option button 300x80 hover000003.png-f72095cb46b66cc5b3bd17eceed6c12c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/button/options button 300x80 hover/option button 300x80 hover000003.png"
-dest_files=["res://.godot/imported/option button 300x80 hover000003.png-d174dd52da8357385bd72456dec5637a.ctex"]
+source_file="res://Sprites/button/options button 300x80 hover/option button 300x80 hover000003.png"
+dest_files=["res://.godot/imported/option button 300x80 hover000003.png-f72095cb46b66cc5b3bd17eceed6c12c.ctex"]
 
 [params]
 

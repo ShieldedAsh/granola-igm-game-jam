@@ -4,7 +4,7 @@ signal playerVictory
 signal playerLoss
 
 func _ready():
-	$AudioStreamPlayer.play()
+	$AudioStreamPlayer2D.play()
 
 func _on_player_victory():
 	playerVictory.emit()

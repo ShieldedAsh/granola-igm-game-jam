@@ -18,7 +18,7 @@ func loadScene(scene:PackedScene):
 		newScene.loadNext.connect(_on_intro_load_next)
 	elif newScene.scene_file_path == "res://scenes/victory_screen.tscn":
 		newScene.backToTitle.connect(_on_pause_menu_load_main_menu)
-	elif newScene.scene_file_path == "res://house.tscn":
+	elif newScene.scene_file_path == "res://scenes/house.tscn":
 		newScene.playerVictory.connect(_on_player_victory)
 		newScene.playerLoss.connect(_on_player_loss)
 	elif newScene.scene_file_path == "res://scenes/defeat.tscn":
@@ -32,7 +32,7 @@ func _on_pause_menu_load_main_menu():
 	loadScene(preload("res://scripts/main_menu.tscn"))
 	
 func _on_intro_load_next():
-	loadScene(preload("res://house.tscn"))
+	loadScene(preload("res://scenes/house.tscn"))
 	
 func _on_player_victory():
 	loadScene(preload("res://scenes/victory_screen.tscn"))

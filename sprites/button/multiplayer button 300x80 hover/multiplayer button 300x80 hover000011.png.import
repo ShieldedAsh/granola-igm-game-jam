@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://eu3kjsr48a8x"
-path="res://.godot/imported/multiplayer button 300x80 hover000011.png-177a9b257232d795b68f0e90d0432e1f.ctex"
+path="res://.godot/imported/multiplayer button 300x80 hover000011.png-094646e6bc6747295f3775990a5efc82.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/button/multiplayer button 300x80 hover/multiplayer button 300x80 hover000011.png"
-dest_files=["res://.godot/imported/multiplayer button 300x80 hover000011.png-177a9b257232d795b68f0e90d0432e1f.ctex"]
+source_file="res://Sprites/button/multiplayer button 300x80 hover/multiplayer button 300x80 hover000011.png"
+dest_files=["res://.godot/imported/multiplayer button 300x80 hover000011.png-094646e6bc6747295f3775990a5efc82.ctex"]
 
 [params]
 
