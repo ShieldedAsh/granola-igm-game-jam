@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://bphgouwuvj47m"
-path="res://.godot/imported/level select button 300x80 hover000016.png-af5eaa15d4f85d0344cd29edbf965715.ctex"
+path="res://.godot/imported/level select button 300x80 hover000016.png-1edd085a2186a6814bd61031db41901c.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Sprites/button/level select button 300x80 hover/level select button 300x80 hover000016.png"
-dest_files=["res://.godot/imported/level select button 300x80 hover000016.png-af5eaa15d4f85d0344cd29edbf965715.ctex"]
+source_file="res://sprites/button/level select button 300x80 hover/level select button 300x80 hover000016.png"
+dest_files=["res://.godot/imported/level select button 300x80 hover000016.png-1edd085a2186a6814bd61031db41901c.ctex"]
 
 [params]
 

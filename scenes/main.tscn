@@ -6,9 +6,9 @@
 [ext_resource type="TileSet" uid="uid://be6q47hcmhxsq" path="res://tilesets/houseTileSet.tres" id="4_nibbg"]
 
 [sub_resource type="NavigationPolygon" id="NavigationPolygon_rd4pn"]
-vertices = PackedVector2Array(-301, 465.031, -301, -71.8594, -172.781, -70.1328, -163.789, 339.813, 716.313, 468.961, 585.172, 354.203, 733.68, -77.0781, 579.828, 27.75, 125.969, -81.9063, 286.523, 35.2422, 125.031, 270, 273.539, 270)
-polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(4, 0, 3, 5), PackedInt32Array(6, 4, 5, 7), PackedInt32Array(8, 6, 7, 9), PackedInt32Array(10, 8, 9, 11)])
-outlines = Array[PackedVector2Array]([PackedVector2Array(-311, -82, -163, -80, -154, 330, 575, 344, 570, 38, 296, 45, 283, 280, 115, 280, 116, -92, 744, -87, 726, 479, -311, 475)])
+vertices = PackedVector2Array(247.063, 267.203, 125.023, 269.781, 125.969, -81.9063, 249.07, -14.0625, 733.68, -77.0781, 578, -11.9375, 716.313, 468.961, 578, 400, -301, 465.031, -166.867, 400, -301, -71.8594, -172.867, -70.1328)
+polygons = Array[PackedInt32Array]([PackedInt32Array(0, 1, 2, 3), PackedInt32Array(3, 2, 4, 5), PackedInt32Array(5, 4, 6, 7), PackedInt32Array(7, 6, 8, 9), PackedInt32Array(9, 8, 10, 11)])
+outlines = Array[PackedVector2Array]([PackedVector2Array(-311, -82, -163, -80, -157, 390, 568, 390, 568, -2, 259, -4, 257, 277, 115, 280, 116, -92, 744, -87, 726, 479, -311, 475)])
 
 [node name="Main" type="Node2D" groups=["Level"]]
 
@@ -36,10 +36,10 @@ rotation = 1.5708
 scale = Vector2(4.5, 1)
 
 [node name="ParentCharacter" parent="." instance=ExtResource("3_0iumb")]
-position = Vector2(568, 320)
+position = Vector2(892, 526)
 
 [node name="HELPER_DELETE_LATER" type="Sprite2D" parent="."]
-position = Vector2(114, 101)
+position = Vector2(578, 349)
 
 [node name="NavigationRegion2D" type="NavigationRegion2D" parent="."]
 position = Vector2(361, 118)
