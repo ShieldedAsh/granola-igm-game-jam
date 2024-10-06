@@ -1,9 +1,9 @@
 [gd_scene load_steps=5 format=3 uid="uid://b64rk6xkg2nh3"]
 
 [ext_resource type="Script" path="res://scripts/main_menu.gd" id="1_34m1h"]
-[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://sprites/button/Play button 300x80.png" id="2_fiuji"]
+[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://Sprites/button/Play button 300x80.png" id="2_fiuji"]
 [ext_resource type="AudioStream" uid="uid://bmhh0bldqkpt2" path="res://sfx/MoveMenuItem/MoveMenuItem.wav" id="2_lfyvn"]
-[ext_resource type="Texture2D" uid="uid://bwce4k3tbbvws" path="res://sprites/button/Quit button 300x80.png" id="3_8ht7j"]
+[ext_resource type="Texture2D" uid="uid://bwce4k3tbbvws" path="res://Sprites/button/Quit button 300x80.png" id="3_8ht7j"]
 
 [node name="MainMenu" type="Node2D" groups=["Level"]]
 script = ExtResource("1_34m1h")
