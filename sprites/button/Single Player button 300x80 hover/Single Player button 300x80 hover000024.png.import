@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://tegmeh1cxdxl"
-path="res://.godot/imported/Single Player button 300x80 hover000024.png-cc2eea2f43c7d74f6b9b2f72a9f72154.ctex"
+path="res://.godot/imported/Single Player button 300x80 hover000024.png-bacef728ac8e104db3db1a509fdb5c34.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/button/Single Player button 300x80 hover/Single Player button 300x80 hover000024.png"
-dest_files=["res://.godot/imported/Single Player button 300x80 hover000024.png-cc2eea2f43c7d74f6b9b2f72a9f72154.ctex"]
+source_file="res://Sprites/button/Single Player button 300x80 hover/Single Player button 300x80 hover000024.png"
+dest_files=["res://.godot/imported/Single Player button 300x80 hover000024.png-bacef728ac8e104db3db1a509fdb5c34.ctex"]
 
 [params]
 

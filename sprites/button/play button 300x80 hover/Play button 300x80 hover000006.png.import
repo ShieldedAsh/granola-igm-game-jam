@@ -3,15 +3,15 @@
 importer="texture"
 type="CompressedTexture2D"
 uid="uid://dd4fli46m8egn"
-path="res://.godot/imported/Play button 300x80 hover000006.png-30e665cea4ad7bf3bb1a73ba2cc07868.ctex"
+path="res://.godot/imported/Play button 300x80 hover000006.png-2337dbceb795ddf84f33975564c7471e.ctex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://sprites/button/play button 300x80 hover/Play button 300x80 hover000006.png"
-dest_files=["res://.godot/imported/Play button 300x80 hover000006.png-30e665cea4ad7bf3bb1a73ba2cc07868.ctex"]
+source_file="res://Sprites/button/play button 300x80 hover/Play button 300x80 hover000006.png"
+dest_files=["res://.godot/imported/Play button 300x80 hover000006.png-2337dbceb795ddf84f33975564c7471e.ctex"]
 
 [params]
 

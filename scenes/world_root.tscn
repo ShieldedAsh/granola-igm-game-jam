@@ -2,9 +2,9 @@
 
 [ext_resource type="Script" path="res://scripts/world_scene.gd" id="1_7r32u"]
 [ext_resource type="Script" path="res://scripts/pause_menu.gd" id="3_u3a70"]
-[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://sprites/button/Play button 300x80.png" id="3_xl17r"]
+[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://Sprites/button/Play button 300x80.png" id="3_xl17r"]
 [ext_resource type="AudioStream" uid="uid://bmhh0bldqkpt2" path="res://sfx/MoveMenuItem/MoveMenuItem.wav" id="4_oets1"]
-[ext_resource type="Texture2D" uid="uid://bwce4k3tbbvws" path="res://sprites/button/Quit button 300x80.png" id="4_qwyb8"]
+[ext_resource type="Texture2D" uid="uid://bwce4k3tbbvws" path="res://Sprites/button/Quit button 300x80.png" id="4_qwyb8"]
 
 [node name="WorldRoot" type="Node2D"]
 script = ExtResource("1_7r32u")

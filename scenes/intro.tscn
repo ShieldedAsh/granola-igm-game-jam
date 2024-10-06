@@ -1,7 +1,7 @@
-[gd_scene load_steps=3 format=3 uid="uid://tsinutyebq7"]
+[gd_scene load_steps=3 format=3 uid="uid://c1qsjqjlm5iri"]
 
 [ext_resource type="Script" path="res://scenes/intro.gd" id="1_2usvm"]
-[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://sprites/button/Play button 300x80.png" id="2_533uk"]
+[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://Sprites/button/Play button 300x80.png" id="2_533uk"]
 
 [node name="Intro" type="Node2D" groups=["Level"]]
 script = ExtResource("1_2usvm")
