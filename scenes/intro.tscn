@@ -1,6 +1,7 @@
-[gd_scene load_steps=2 format=3 uid="uid://c1qsjqjlm5iri"]
+[gd_scene load_steps=3 format=3 uid="uid://tsinutyebq7"]
 
 [ext_resource type="Script" path="res://scenes/intro.gd" id="1_2usvm"]
+[ext_resource type="Texture2D" uid="uid://copvoa3ludj0k" path="res://sprites/button/Play button 300x80.png" id="2_533uk"]
 
 [node name="Intro" type="Node2D" groups=["Level"]]
 script = ExtResource("1_2usvm")
@@ -32,10 +33,10 @@ I can't let her see me in the same place as the chores I need to do."
 fit_content = true
 
 [node name="Continue" type="Button" parent="."]
-offset_left = 538.0
-offset_top = 451.0
-offset_right = 617.0
-offset_bottom = 482.0
-text = "Continue"
+offset_left = 427.0
+offset_top = 438.0
+offset_right = 735.0
+offset_bottom = 526.0
+icon = ExtResource("2_533uk")
 
 [connection signal="pressed" from="Continue" to="." method="_on_continue_pressed"]
