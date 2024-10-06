@@ -2,6 +2,8 @@ extends CharacterBody2D
 
 @onready var raycastFolder = $Raycasts
 
+signal playerDetected
+
 var speed = 300
 var accel = 7
 var physicsParameters = PhysicsPointQueryParameters2D.new()
@@ -15,7 +17,7 @@ func _process(_delta):
 	var space_state = get_world_2d().direct_space_state
 	for i:RayCast2D in raycastFolder.get_children():
 		if i.is_colliding() and i.get_collider() is CharacterBody2D:
-			print("raycast hit a characterbody")
+			playerDetected.emit()
 			
 func _physics_process(delta):
 	physicsParameters.collide_with_areas = true 
