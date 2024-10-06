@@ -5,9 +5,9 @@ extends CharacterBody2D
 var speed = 300
 var accel = 7
 var physicsParameters = PhysicsPointQueryParameters2D.new()
-var patrolStops = [Vector2(81,61),Vector2(81,569),Vector2(974,565),Vector2(974,112),Vector2(584,106),Vector2(578,349)]
+var patrolStops = [Vector2(114,101),Vector2(115,520),Vector2(1009,528),Vector2(1015,95),Vector2(572,95),Vector2(565,345)]
 var currentStop = 4
-var stopDirection = 1
+var stopDirection = -1
 
 @onready var nav: NavigationAgent2D = $NavigationAgent2D
 
@@ -19,7 +19,7 @@ func _process(_delta):
 			
 func _physics_process(delta):
 	physicsParameters.collide_with_areas = true 
-	physicsParameters.position = get_global_mouse_position()
+	physicsParameters.position = patrolStops[currentStop]
 	
 	# Add the gravity
 	var direction = Vector2()
