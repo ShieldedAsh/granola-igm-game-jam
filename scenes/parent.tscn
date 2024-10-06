@@ -34,19 +34,28 @@ debug_enabled = true
 [node name="RayCast2D" type="RayCast2D" parent="Raycasts"]
 rotation = 3.14159
 target_position = Vector2(0, 1000)
+collision_mask = 3
 
 [node name="RayCast2D2" type="RayCast2D" parent="Raycasts"]
 rotation = 2.79253
 target_position = Vector2(0, 1000)
+collision_mask = 3
 
 [node name="RayCast2D3" type="RayCast2D" parent="Raycasts"]
 rotation = -2.79253
 target_position = Vector2(0, 1000)
+collision_mask = 3
 
 [node name="RayCast2D4" type="RayCast2D" parent="Raycasts"]
 rotation = 2.96706
 target_position = Vector2(0, 1000)
+collision_mask = 3
 
 [node name="RayCast2D5" type="RayCast2D" parent="Raycasts"]
 rotation = -2.96706
 target_position = Vector2(0, 1000)
+collision_mask = 3
+
+[node name="Sprite2D3" type="Sprite2D" parent="."]
+position = Vector2(47, -131.75)
+scale = Vector2(135, 264.5)
