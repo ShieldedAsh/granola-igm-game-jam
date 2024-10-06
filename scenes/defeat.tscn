@@ -1,0 +1,36 @@
+[gd_scene load_steps=2 format=3 uid="uid://2ly80k804kev"]
+
+[ext_resource type="Script" path="res://scenes/defeat.gd" id="1_8pao0"]
+
+[node name="Defeat" type="Node2D" groups=["Level"]]
+script = ExtResource("1_8pao0")
+
+[node name="Panel" type="Panel" parent="."]
+offset_left = 275.0
+offset_top = 152.0
+offset_right = 918.0
+offset_bottom = 373.0
+
+[node name="RichTextLabel" type="RichTextLabel" parent="Panel"]
+offset_left = 67.0
+offset_top = 45.0
+offset_right = 1094.0
+offset_bottom = 176.0
+text = "DEFEAT (chores)"
+
+[node name="Restart" type="Button" parent="."]
+offset_left = 565.0
+offset_top = 439.0
+offset_right = 630.0
+offset_bottom = 470.0
+text = "Restart"
+
+[node name="Quit" type="Button" parent="."]
+offset_left = 551.0
+offset_top = 514.0
+offset_right = 662.0
+offset_bottom = 545.0
+text = "Quit to Menu"
+
+[connection signal="pressed" from="Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="Quit" to="." method="_on_quit_pressed"]
