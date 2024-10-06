@@ -6,3 +6,12 @@ Made by
 - Shane Packard
 
 *Insert Game Name here* was made for the Granola.GG x IGM @ RIT 2024 Game Jam, it took place from 10/4/24 to 10/6/24
+
+
+bedroom
+living room
+dining room
+kitchen
+library
+arts/crafts room
+bathroom
